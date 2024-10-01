@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "Curse Cloak",
+    "description": "This extension will mask out the cuss words with astrick(*) nowadays a lot of teenagers are on social media and they are sometimes exposed to 18+ content/textual-content, explicit content etc. so to prevent that this extension will help a lot, basically this extension acts as a parental lock on children's devices.",
+    "version": "1.0",
+    "permissions": [
+      "activeTab",
+      "scripting"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["contentScript.js"]
+      }
+    ],
+    "web_accessible_resources": [
+      {
+        "resources": ["cuss_words.csv"],
+        "matches": ["<all_urls>"]
+      }
+    ]
+  }
+  
