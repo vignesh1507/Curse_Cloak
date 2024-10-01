@@ -19,7 +19,7 @@
 
 ### Prerequisites
 
-- Google Chrome installed on your machine.
+- Google Chrome installed on your local machine.
 
 ### Installation
 
