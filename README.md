@@ -1,5 +1,3 @@
-
-```markdown
 # 🌪️ Curse Cloak: Your Shield Against Offensive Language
 
 ![Curse Cloak Banner](https://dragon.online-convert.com/download-file/cdf523d5-0415-4a22-95a0-0399ecba2fe6/9edd2413-a348-4ea4-8544-390a35e5e8f6) 
@@ -89,4 +87,3 @@ We welcome contributions! If you have ideas for new features or improvements, fe
 
 
 ### 💡 Be part of the change. Browse smarter with **Curse Cloak**! 🌐
-```
