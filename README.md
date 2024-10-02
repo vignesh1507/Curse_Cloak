@@ -26,14 +26,14 @@
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/vignesh1507/Curse-Cloak.git
-   cd Curse-Cloak
+   git clone https://github.com/vignesh1507/Curse_Cloak.git
+   cd Curse_Cloak
    ```
 
 2. **Load the extension in Chrome:**
    - Go to `chrome://extensions/`.
    - Enable **Developer mode** (toggle switch in the top right).
-   - Click on **Load unpacked** and select the `curse-cloak` directory.
+   - Click on **Load unpacked** and select the `curse_cloak` directory.
 
 3. **Start Browsing**:
    - Click the **Curse Cloak** icon in your toolbar to activate the filtering.
