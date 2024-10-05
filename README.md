@@ -1,7 +1,5 @@
 # 🌪️ Curse Cloak: Your Shield Against Offensive Language
 
-![Curse Cloak Banner](https://dragon.online-convert.com/download-file/cdf523d5-0415-4a22-95a0-0399ecba2fe6/9edd2413-a348-4ea4-8544-390a35e5e8f6) 
-
 **Curse Cloak** is a cutting-edge Chrome extension designed to enhance your browsing experience by masking offensive language in real time. Say goodbye to unpleasant surprises in comments, articles, and social media feeds! With its intuitive functionality, **Curse Cloak** ensures a cleaner, more enjoyable online environment.
 
 ---
