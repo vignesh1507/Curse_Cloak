@@ -1,0 +1,75 @@
+body {
+    width: 250px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#statusMessage {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+#toggleButton {
+    padding: 12px 30px;
+    border: none;
+    color: white;
+    background-color: #007bff;
+    cursor: pointer;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#toggleButton.active {
+    background-color: #dc3545;
+}
+
+#toggleButton:hover {
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#status {
+    font-weight: bold;
+    color: #dc3545;
+}
+
+#status.on {
+    color: #28a745;
+}
+
+#toggleButton.active .icon {
+    content: '✅';
+}
+
+#toggleButton.active #buttonText {
+    content: 'Turn Off';
+}

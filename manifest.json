@@ -5,10 +5,19 @@
   "version": "1.0",
   "permissions": [
     "activeTab",
-    "scripting"
+    "scripting",
+    "storage"
   ],
   "background": {
     "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/face.png",
+      "48": "images/face.png",
+      "128": "images/face.png"
+    }
   },
   "content_scripts": [
     {
