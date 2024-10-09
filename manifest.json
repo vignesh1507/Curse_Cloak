@@ -25,7 +25,7 @@
         "<all_urls>"
       ],
       "js": [
-        "contentScript.js"
+        "dist/contentScript.bundle.js"
       ]
     }
   ],

@@ -1,21 +1,10 @@
+import wash from 'washyourmouthoutwithsoap';
+
 let cussWords = [];
 
-// Function to fetch and parse cuss words from CSV
+// Function to fetch and parse cuss words from washyourmouthoutwithsoap
 function fetchCussWords() {
-  return fetch(chrome.runtime.getURL("cuss_words.csv"))
-    .then(response => {
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`); 
-      }
-      return response.text();
-    })
-    .then(data => {
-      const lines = data.split('\n');
-      cussWords = lines.map(line => line.trim()).filter(line => line !== '');
-    })
-    .catch(error => {
-      console.error('Error fetching cuss words:', error);
-    });
+  cussWords = wash.words('en')
 }
 
 // Function to apply a blur effect to cuss words
@@ -30,7 +19,7 @@ function blurCussWords(textNode) {
 
 // Traverse all text nodes in the document and blur the cuss words
 function traverseAndBlur(node) {
-  if (node.nodeType === Node.TEXT_NODE) { 
+  if (node.nodeType === Node.TEXT_NODE) {
     blurCussWords(node);
   } else {
     node.childNodes.forEach(childNode => traverseAndBlur(childNode));
@@ -38,10 +27,9 @@ function traverseAndBlur(node) {
 }
 
 // Start processing the webpage after fetching cuss words
-fetchCussWords().then(() => {
-  chrome.storage.local.get(['extensionActive'], function (result) {
-    if (result.extensionActive !== false) { 
-      traverseAndBlur(document.body);
-    }
-  });
+fetchCussWords(); // Fetch cuss words from the library
+chrome.storage.local.get(['extensionActive'], function (result) {
+  if (result.extensionActive !== false) {
+    traverseAndBlur(document.body);
+  }
 });
