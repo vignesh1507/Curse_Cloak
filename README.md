@@ -55,15 +55,4 @@
 - **`contentScript.js`**: Main logic for detecting and masking cuss words.
 
 
-## 🎉 Contributing
-
-We welcome contributions! If you have ideas for new features or improvements, feel free to submit a pull request.
-
-1. Fork the repository.
-2. Create your own feature branch: `git checkout -b feature/my-feature`.
-3. Commit your changes: `git commit -m 'Add some feature'`.
-4. Push to the branch: `git push origin feature/my-feature`.
-5. Open a pull request.
-
-
 ### 💡 Be part of the change. Browse smarter with **Curse Cloak**! 🌐
