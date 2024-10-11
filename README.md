@@ -77,4 +77,3 @@ We welcome contributions! If you have ideas for new features or improvements, fe
 
 ---
 
-Feel free to adjust any sections further to suit your needs!
