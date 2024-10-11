@@ -2,7 +2,6 @@
 
 **Curse Cloak** is a cutting-edge Chrome extension designed to enhance your browsing experience by masking offensive language in real time. Say goodbye to unpleasant surprises in comments, articles, and social media feeds! With its intuitive functionality, **Curse Cloak** ensures a cleaner, more enjoyable online environment.
 
----
 
 ## 🚀 Features
 
@@ -11,7 +10,6 @@
 - **User-Friendly Interface**: Simple activation with a single click; no complex settings to navigate.
 - **Customizable**: Easily extend the list of filtered words with your own `cuss_words.csv`.
 
----
 
 ## ⚡ Getting Started
 
@@ -36,19 +34,17 @@
 3. **Start Browsing**:
    - Click the **Curse Cloak** icon in your toolbar to activate the filtering.
 
----
 
 ## 🌟 How It Works
 
 - **Text Analysis**: As you browse, **Curse Cloak** scans the content on the webpage for any cuss words listed in `cuss_words.csv`.
 - **Dynamic Masking**: When a match is found, it replaces the offending word with asterisks (****), providing an immediate visual filter.
 
----
 
 ## 🛠️ Technical Details
 
 - **Built with**: 
-  - HTML, CSS, JavaScript
+  - HTML, CSS & JavaScript
   - Chrome Extensions API
 - **Manifest Version**: 3
 
@@ -59,8 +55,6 @@
 - **`contentScript.js`**: Main logic for detecting and masking cuss words.
 - **`cuss_words.csv`**: Contains a list of offensive words to be filtered.
 
----
-
 ## 📄 Customization
 
 You can easily add more words to be filtered:
@@ -68,20 +62,6 @@ You can easily add more words to be filtered:
 1. Open `cuss_words.csv`.
 2. Add your cuss words, one per line.
 3. Save and refresh your extension in Chrome.
-
----
-
-## 🎉 Contributing
-
-We welcome contributions! If you have ideas for new features or improvements, feel free to submit a pull request.
-
-1. Fork the repository.
-2. Create your own feature branch: `git checkout -b feature/my-feature`.
-3. Commit your changes: `git commit -m 'Add some feature'`.
-4. Push to the branch: `git push origin feature/my-feature`.
-5. Open a pull request.
-
----
 
 
 ### 💡 Be part of the change. Browse smarter with **Curse Cloak**! 🌐
