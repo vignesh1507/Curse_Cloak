@@ -10,10 +10,10 @@ cuss_words = [
     "Goddamn", "goddamned", "goddamnit", "godsdamn", "hell", "holy shit", "horseshit", 
     "in shit", "jackarse", "jack-ass", "jackass", "Jesus Christ", "Jesus fuck", 
     "Jesus Harold Christ", "Jesus H. Christ", "Jesus, Mary and Joseph", "Jesus wept", 
-    "kike", "mother fucker", "mother-fucker", "motherfucker", "nigga", "nigra", 
-    "pigfucker", "piss", "prick", "pussy", "shit", "shit ass", "shite", "sibling fucker", 
+    "kike", "mother fucker", "mother-fucker", "motherfucker", "nigga", "nigra", "nigger",
+    "pigfucker","prostitute", "piss", "prick", "pussy","redneck", "shit", "shit ass", "shite", "sibling fucker", 
     "sisterfuck", "sisterfucker", "slut", "son of a bitch", "son of a whore", "spastic", 
-    "sweet Jesus", "twat", "wanker"
+    "sweet Jesus", "twat", "wanker", "whore"
 ]
 
 with open('cuss_words.csv', mode='w', newline='') as file:
