@@ -29,13 +29,13 @@ document.addEventListener('DOMContentLoaded', () => {
       buttonText.textContent = 'Turn Off';
       statusElement.textContent = 'ON';
       statusElement.classList.add('on');
-      document.querySelector('.icon').textContent = '✅';
+      document.querySelector('.icon').textContent = '🛑';
     } else {
       toggleButton.classList.remove('active');
       buttonText.textContent = 'Turn On';
       statusElement.textContent = 'OFF';
       statusElement.classList.remove('on');
-      document.querySelector('.icon').textContent = '🛑';
+      document.querySelector('.icon').textContent = '✅';
     }
   }
 });
