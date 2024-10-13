@@ -59,8 +59,9 @@
 
 You can easily add more words to be filtered:
 
-1. Open `cuss_words.csv`.
+1. Open `csv creator.py`.
 2. Add your cuss words, one per line.
+3. Run the script to generate a fresh csv with the updated list of words.
 3. Save and refresh your extension in Chrome.
 
 
