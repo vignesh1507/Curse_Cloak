@@ -1,6 +1,6 @@
 let cussWords = [];
 
-// Function to fetch and parse cuss words from CSV
+// Function to fetch and parse cuss words from CSV file. 
 function fetchCussWords() {
   return fetch(chrome.runtime.getURL("cuss_words.csv"))
     .then(response => {
@@ -18,7 +18,7 @@ function fetchCussWords() {
     });
 }
 
-// Function to apply a blur effect to cuss words
+// Function to apply a blur effect to the cuss words
 function blurCussWords(textNode) {
   cussWords.forEach(word => {
     const regex = new RegExp(`\\b${word}\\b`, 'gi');
