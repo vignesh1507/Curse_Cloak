@@ -6,7 +6,7 @@
 ## 🚀 Features
 
 - **Dynamic Filtering**: Instantly replaces offensive words with asterisks (****) to keep your reading experience clean and enjoyable.
-- **Seamless Integration**: Works effortlessly across all websites—no configuration needed.
+- **Seamless Integration**: Works effortlessly across all websites—no configuration needed. 
 - **User-Friendly Interface**: Simple activation with a single click; no complex settings to navigate.
 - **Customizable**: Easily extend the list of filtered words with your own `cuss_words.csv`.
 
