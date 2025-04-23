@@ -14,10 +14,19 @@ document.addEventListener('DOMContentLoaded', function() {
                 li.textContent = site;
                 const removeButton = document.createElement('button');
                 removeButton.textContent = 'Remove';
+                removeButton.className = 'remove-button';
                 removeButton.onclick = () => removeSite(index);
                 li.appendChild(removeButton);
                 whitelistElement.appendChild(li);
             });
+            
+            // Show "no sites" message if list is empty
+            if (whitelistedSites.length === 0) {
+                const emptyMessage = document.createElement('p');
+                emptyMessage.textContent = 'No websites have been whitelisted yet.';
+                emptyMessage.className = 'empty-message';
+                whitelistElement.appendChild(emptyMessage);
+            }
         });
     }
 
@@ -26,6 +35,13 @@ document.addEventListener('DOMContentLoaded', function() {
         if (newSite) {
             chrome.storage.sync.get(['whitelistedSites'], function(result) {
                 const whitelistedSites = result.whitelistedSites || [];
+                
+                // Check if site already exists
+                if (whitelistedSites.includes(newSite)) {
+                    alert('This website is already in your whitelist.');
+                    return;
+                }
+                
                 whitelistedSites.push(newSite);
 
                 chrome.storage.sync.set({ whitelistedSites }, function() {
@@ -33,6 +49,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     loadWhitelist();
                 });
             });
+        } else {
+            alert('Please enter a valid website URL');
         }
     }
 
@@ -48,6 +66,13 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     addSiteButton.addEventListener('click', addSite);
+    
+    // Also add Enter key support for the input field
+    websiteInput.addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            addSite();
+        }
+    });
 
     loadWhitelist();
 });

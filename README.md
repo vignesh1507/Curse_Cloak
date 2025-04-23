@@ -8,7 +8,7 @@
 - **Dynamic Filtering**: Instantly replaces offensive words with asterisks (****) to keep your reading experience clean and enjoyable.
 - **Seamless Integration**: Works effortlessly across all websites—no configuration needed. 
 - **User-Friendly Interface**: Simple activation with a single click; no complex settings to navigate.
-- **Customizable**: Easily extend the list of filtered words with your own `cuss_words.csv`.
+- **Customizable**: Easily extend any list of filtered words with your own `{language}_cuss_words.csv` or `{language}_cuss_expressions.csv`.
 
 
 ## ⚡ Getting Started
@@ -33,12 +33,13 @@
 
 3. **Start Browsing**:
    - Click the **Curse Cloak** icon in your toolbar to activate the filtering.
+   - Then choose the language you want (or all of them).
 
 
 ## 🌟 How It Works
 
-- **Text Analysis**: As you browse, **Curse Cloak** scans the content on the webpage for any cuss words listed in `cuss_words.csv`.
-- **Dynamic Masking**: When a match is found, it replaces the offending word with asterisks (****), providing an immediate visual filter.
+- **Text Analysis**: As you browse, **Curse Cloak** scans the content on the webpage for any cuss words listed in some file `{language}_cuss_words.csv` or `{language}_cuss_expressions.csv`.
+- **Dynamic Masking**: When a match is found, it replaces the offending word/expression with asterisks (****), providing an immediate visual filter.
 
 
 ## 🛠️ Technical Details
@@ -53,7 +54,8 @@
 - **`manifest.json`**: Configuration file for the extension.
 - **`background.js`**: Handles background tasks and interactions.
 - **`contentScript.js`**: Main logic for detecting and masking cuss words.
-- **`cuss_words.csv`**: Contains a list of offensive words to be filtered.
+- **`{language}_cuss_words.csv`**: Contains a list of offensive words to be filtered in {language}.
+- **`{language}_cuss_expressions.csv`**: Contains a list of offensive expressions (sqeuences of words) to be filtered in {language}.
 
 ## 📄 Customization
 
@@ -61,7 +63,7 @@ You can easily add more words to be filtered:
 
 1. Open `csv creator.py`.
 2. Add your cuss words, one per line.
-3. Run the script to generate a fresh csv with the updated list of words.
+3. Run the script to generate fresh csv files with the updated list of words and languages.
 3. Save and refresh your extension in Chrome.
 
 

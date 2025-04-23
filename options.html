@@ -1,13 +1,82 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Whitelist Websites</title>
+    <title>Curse Cloak - Whitelist Settings</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .input-group {
+            margin-bottom: 20px;
+        }
+        input[type="text"] {
+            padding: 8px;
+            width: 300px;
+            font-size: 14px;
+        }
+        button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 8px 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 0 5px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        button.remove-button {
+            background-color: #f44336;
+            margin-left: 10px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .empty-message {
+            color: #888;
+            font-style: italic;
+        }
+        .info-box {
+            background-color: #f8f8f8;
+            border-left: 4px solid #4CAF50;
+            padding: 10px 15px;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
     <h1>Manage Whitelisted Websites</h1>
-    <input type="text" id="websiteInput" placeholder="Enter website URL"><br><br>
-    <button id="addSite">Add Website</button>
+    
+    <div class="info-box">
+        <p>Add websites that you want to exempt from curse word censoring. The extension will not censor any content on these websites.</p>
+        <p>Example formats: "example.com", "subdomain.example.com", etc.</p>
+    </div>
+    
+    <div class="input-group">
+        <input type="text" id="websiteInput" placeholder="Enter website domain (e.g. example.com)">
+        <button id="addSite">Add Website</button>
+    </div>
+    
+    <h2>Whitelisted Websites</h2>
     <ul id="whitelist"></ul>
+    
     <script src="options.js"></script>
 </body>
 </html>
